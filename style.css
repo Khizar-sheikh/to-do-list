@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: rgba(165, 160, 160, 0.074);
+}
+.header{
+    padding: 0px 40px;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 10px solid orangered;
+}
+.material-icons-round {
+    font-family: "Material Icons Round";
+}
+.menu{
+    font-size: 40px;
+}
+.menu:hover{
+    background-color:rgb(152, 147, 147 ,40%);
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logotext{
+    color:orangered;
+    text-decoration: none!important ;
+    margin: 0 5px;
+}
+.logo h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2.6rem;
+}
+.logoimg{
+    height: 45px;
+    margin-top: 4px;
+}
+.container {
+    cursor: pointer;
+    border: 2px solid blaCK;
+    border: 2px solid blaCK;
+    display: flex;
+    width: 70px;
+    height: 35px;
+    background-color: #ddd;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .ball {
+    margin: 6px;
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    transition: transform 1s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+  }
+  
+  .ball.right {
+    transform: translateX(32px);
+  }
+  
+  .sun,
+  .Moon {
+    font-size: 24px;
+  }
+  .Moon {
+    margin: 5px 2.5px;
+  }
+  .dark {
+    background-image: linear-gradient(
+      to right,
+      rgb(61, 59, 59),
+      rgb(80, 73, 73),
+      rgb(164, 160, 160),
+      rgb(151, 148, 148),
+      rgb(180, 174, 174),
+      rgb(239, 230, 230),
+      rgb(220, 214, 214)
+    );
+  }
+  
+  .bright {
+    background-image: linear-gradient(
+      to left,
+      rgb(255, 166, 0 ,100%),
+      rgb(255, 166, 0 ,90%),
+      rgb(255, 166, 0 ,80%),
+      rgb(255, 166, 0 ,70%),
+      rgb(255, 166, 0 ,60%),
+      rgb(255, 166, 0 ,50%),
+      rgb(255, 166, 0 ,40%),
+      rgb(255, 166, 0 ,30%),
+      rgba(255, 167, 16, 0.491),
+      rgba(255, 166, 0, 0.683)
+    );
+  }
+  
+  .emojis {
+    display: flex;
+    align-items: center;
+  }
+  .dropdown{
+    background-color: rgba(255, 255, 255, 0.899);
+    height: 100vh;
+    /* width: %; */
+    /* display: none; */
+  } 
+.Home{
+    height: 300px; 
+}  
+.Home h2 ,.projects h2{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    border-bottom: 2px solid black;
+    margin: 10px 40px;
+    font-size: 1.6rem;
+}
+
