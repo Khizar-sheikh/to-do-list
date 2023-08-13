@@ -1,0 +1,103 @@
+.listtodo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.listcontainer {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  width: 80%;
+  border: 2px solid black;
+  border-radius: 5px;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+  margin: 6px;
+}
+.unchecked {
+    min-width: 17px; /* Set a minimum width for the unchecked icon */
+    height: 17px;
+    width: 17px;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.date {
+  margin-right: 5px;
+  /* font-size: large; */
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding: 5px;
+  height: auto;
+  width: auto;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.leftitems,
+.rightitems {
+  display: flex;
+  align-items: center;
+}
+.taskinfo .title {
+    margin-left: 10px;
+  font-size: 1rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+}
+.taskinfo .description {
+    margin-left: 10px;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  height: 20px; /* Set a fixed height for the description */
+ cursor: grab;
+  overflow-y: scroll; /* Add vertical scrollbar when content overflows */
+}
+.linethrough{
+    text-decoration: line-through;
+}
+.fade{
+    opacity: 0.7;
+}
+.option{
+    display: none;
+    flex-direction: column-reverse;
+    justify-content: center;
+    height: 50px;
+}
+  .delTask,.editTask{
+    background-color: rgba(248, 245, 245, 0.236);
+ font-size: 0.8rem;
+    height: 20px;
+    cursor: pointer;
+    border: 1px solid white;
+  }
+  .editTask:hover{
+    background-color: rgba(50, 255, 47, 0.797);
+  }
+  .delTask:hover{
+    background-color: rgb(233, 101, 101);
+  }
+.hidden{
+display: flex;
+}
+.checked{
+background-color: orangered;
+border: none;
+}
+.yellowed{
+    color: rgb(255, 187, 1);
+    margin-right: 24px;
+}
+.threedots{
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+}
+.threedots:hover{
+ background-color: orange;
+}

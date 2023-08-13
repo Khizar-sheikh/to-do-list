@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- 60595 -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HAVE-TO-DO</title>
@@ -14,7 +15,10 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
       rel="stylesheet"
     />
+
+    <link rel="stylesheet" href="content.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style2.css" />
   </head>
   <body>
     <div class="main">
@@ -38,79 +42,71 @@
           <div class="ball"></div>
         </div>
       </div>
-      <div class="dropdown">
-        <div class="Home">
-          <h2>Home</h2>
-          <div class="allTasks">
-            <img src="./images/check-list.png" alt="" />
-            <h3>All Tasks</h3>
+      <div class="contentbody">
+        <div class="dropdown">
+          <div class="Home">
+            <h2>Home</h2>
+            <div value="All Tasks" class="allTasks">
+              <img src="./images/check-list.png" alt="" />
+              <h3>All Tasks</h3>
+            </div>
+            <div value="Today" class="todayTasks">
+              <img src="./images/tasks.png" alt="" />
+              <h3>Today</h3>
+            </div>
+            <div value="Next 7 days" class="Next7days">
+              <img src="./images/week2.png" alt="" />
+              <h3>Next 7 days</h3>
+            </div>
+            <div value="Important" class="important">
+              <img src="./images/star.png" alt="" />
+              <h3>Important</h3>
+            </div>
           </div>
-          <div class="todayTasks">
-            <img src="./images/tasks.png" alt="" />
-            <h3>Today</h3>
-          </div>
-          <div class="Next7days">
-            <img src="./images/week2.png" alt="" />
-            <h3>Next 7 days</h3>
-          </div>
-          <div class="important">
-            <img src="./images/star.png" alt="" />
-            <h3>Important</h3>
+          <div class="projects">
+            <h2>Projects</h2>
+            <div class="taskcontainer"></div>
+            <div class="projectinfo">
+              <div style="display: flex" class="InfoDiv">
+                <div class="material-icons-round">menu</div>
+                <input
+                  class="projectitle"
+                  required
+                  type="text"
+                  placeholder="Enter your project"
+                />
+              </div>
+              <div class="buttons">
+                <input type="button" class="addbtn" value="Add" />
+                <input type="button" class="cancelbtn" value="Cancel" />
+              </div>
+            </div>
+
+            <div style="display: flex; align-items: center;" class="addproject">
+              <span style="width: 28px" class="material-icons-round"
+                >add_circle_outlined</span
+              >
+              <span>Add a Project</span>
+            </div>
           </div>
         </div>
-        <div class="projects">
-          <h2>Projects</h2>
-          <div class="taskcontainer">
-            <div class="task">
-              <div class="parent">
-                <div class="material-icons-round">menu</div>
-                <div class="title">HAVE TO DO</div>
-              </div>
-
-              <div class="material-icons-round">more_vert</div>
-            </div>
-
-            <div class="task">
-              <div class="parent">
-                <div class="material-icons-round">menu</div>
-                <div class="title">HAVE TO DO</div>
-              </div>
-
-              <div class="material-icons-round">more_vert</div>
-            </div>
-
-            <div class="task">
-              <div class="parent">
-                <div class="material-icons-round">menu</div>
-                <div class="title">HAVE TO DO</div>
-              </div>
-
-              <div class="material-icons-round">more_vert</div>
+        <div class="content">
+          <div class="contentHead">All Tasks</div>
+          <div class="listtodo"></div>
+          <div class="projectdetails"></div>
+          <div class="addtask">
+            <div class="jekl">
+              <span style="width: 28px" class="material-icons-round"
+                >add_circle_outlined</span
+              >
+              <span>Add a Task</span>
             </div>
           </div>
-          <div class="projectinfo">
-<div style="display: flex;" class="InfoDiv">
-    <div class="material-icons-round">menu</div>
-    <input type="text" placeholder="Enter your project"/>
-</div>
-            <div class="buttons">
-        <input type="button" class="addbtn" value="Add">
-        <input type="button" class="cancelbtn" value="Cancel">
-          </div>
-
-</div>
-
-<div class="addproject">
-            <span style="width: 30px" class="material-icons-round"
-              >add_circle_outlined</span
-            >
-            <span>Add a Project</span>
-          </div>
+        </div>
       </div>
-      </div>
-      <div class="content"></div>
     </div>
 
     <script src="main.js"></script>
+    <script src="main2.js"></script>
   </body>
 </html>

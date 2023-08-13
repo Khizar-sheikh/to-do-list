@@ -1,0 +1,74 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.projectdetails{
+    width: 60%;
+    padding-right: 20px;
+    background-color:rgb(255, 255, 255);
+    margin: 20px 0 0 0;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.detailsContainer{
+display: flex;
+flex-direction: column;
+padding:10px 20px ;
+}
+.detailsContainer input{
+    padding: 10px ;
+    border: 2px solid black;
+    margin: 10px 20px;
+    height: 40px;
+    font-size: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.detailsContainer textarea{
+    font-size: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+padding: 10px;
+    height: 0px;
+    border: 2px solid black;
+    margin: 10px 20px;
+    height: 40px;
+}
+.formButtons{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#addTask ,#canceladd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.addtask{
+    cursor: pointer;
+    display: flex;
+    height: 35px;
+    font-size: 20px;
+    justify-content: center;
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.jekl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 10px;
+    width: 200px;
+    height: 40px;
+}
+.jekl:hover{
+background-color: #e0dada;
+border-radius: 5px;
+}
+.content{
+    height: 100vh;
+}
+ul  li{
+    list-style: none;
+    display: flex;
+}
